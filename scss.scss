@@ -8,10 +8,7 @@
     margin: 0 auto;
 }
 
-body {
-  
-
-}
+body {}
 
 ul,
 li {
@@ -22,6 +19,15 @@ img {
     width: 100%;
     height: 100%;
 }
-.top {
+.background {
+    position: absolute;
+}
+.header__top {
+    span,.coordinate {
+        color: #fff;
+    }
+    .coordinate {
+       
 
+    }
 }

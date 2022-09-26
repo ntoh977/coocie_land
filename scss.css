@@ -17,4 +17,12 @@ img {
   height: 100%;
 }
 
+.background {
+  position: absolute;
+}
+
+.header__top span, .header__top .coordinate {
+  color: #fff;
+}
+
 /*# sourceMappingURL=scss.css.map */
