@@ -6,11 +6,13 @@
 .container {
     max-width: 1928px;
     margin: 0 auto;
+    position: relative;
 }
 
 body {
     font-size: 21px;
     color: #fff;
+    font-family: Montserrat;
 }
 
 ul,
@@ -25,7 +27,7 @@ img {
 
 .top {
     background-repeat: no-repeat;
-    max-width: 821px;
+    max-width: 1087px;
     margin: 0 auto;
 }
 
@@ -34,6 +36,29 @@ img {
     z-index: -1;
     // height: unset;
     // width: unset;
+}
+
+.berry_1,
+.berry_2,
+.berry_3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.berry_1 {
+    left: 0;
+    top: 200px;
+}
+
+.berry_2 {
+    right: 0;
+    top: 109px;
+}
+
+.berry_3 {
+    right: 173px;
+    bottom: 88px;
 }
 
 .header__top {
@@ -98,4 +123,202 @@ img {
     .time_worck {
         font-size: 15px;
     }
+}
+
+.text__content {
+    max-width: 624px;
+    margin-top: 200px;
+
+    .btn_top {
+        background-color: #fff;
+        color: silver;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 142px;
+    }
+
+    .text {
+        font-weight: 700;
+        font-size: 48px;
+        margin: 10px 0;
+    }
+
+    .text_bottom {
+
+        font-size: 24px;
+        margin-bottom: 40px;
+        text-align: left;
+        opacity: 0.7;
+    }
+
+    .container_text__bottom {
+        display: flex;
+        align-items: center;
+
+        .btn {
+            padding: 20px 30px;
+            background-color: #FED84C;
+            color: #2E363E;
+            border-radius: 10px;
+
+
+        }
+
+        .text__bot {
+            font-size: 15px;
+            padding: 20px;
+            text-align: left;
+            opacity: 0.7;
+        }
+    }
+}
+
+.center__block {
+    color: #2E363E;
+    border-radius: 10px;
+
+    h1 {
+        text-align: center;
+        color: #2E363E;
+    }
+
+    .product__set {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 380px;
+        border: 1px solid #F2F6FA;
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.7;
+        margin: 20px 0;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .btn__by {
+        display: inline-flex;
+        padding: 10px 20px;
+        background-color: #FED84C;
+        color: #2E363E;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .product__info {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+}
+
+.center__zakaz {
+    position: relative;
+    height: 1049px;
+    background-color: #081130;
+    margin-top: 60px;
+    img {
+        position: absolute;
+        width: unset;
+        height: unset;
+    }
+
+    .top {
+        top: 0;
+        min-width: 100%;
+    }
+
+    .bottom {
+        bottom: 0;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .phone {
+    
+        left: 0;
+        height: 70%;
+        bottom: 0;
+    
+    }
+
+    .leaf {
+        top: 60px;
+        left: 460px;
+    }
+
+    .berry_phone {
+        right: 150px;
+        top: 300px;
+    }
+    
+.text__content {
+    max-width: 624px;
+    margin-top: 200px;
+    position: absolute;
+    right: 92px;
+    top: 130px;
+
+    .btn_top {
+        display: inline;
+        background-color: #fff;
+        color: silver;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        
+    }
+
+    .text {
+        font-weight: 700;
+        font-size: 48px;
+        margin: 30px 0;
+        line-height: 40px;
+    }
+
+    .text_bottom {
+
+        font-size: 24px;
+        margin-bottom: 40px;
+        text-align: left;
+        opacity: 0.7;
+    }
+
+    .container_text__bottom {
+        display: flex;
+        align-items: center;
+
+        .btn {
+            padding: 20px 30px;
+            background-color: #FED84C;
+            color: #2E363E;
+            border-radius: 10px;
+
+
+        }
+
+        .text__bot {
+            font-size: 15px;
+            padding: 20px;
+            text-align: left;
+            opacity: 0.7;
+        }
+    }
+}
 }
