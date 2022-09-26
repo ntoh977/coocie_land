@@ -7,6 +7,11 @@
   margin: 0 auto;
 }
 
+body {
+  font-size: 21px;
+  color: #fff;
+}
+
 ul,
 li {
   list-style: none;
@@ -17,12 +22,66 @@ img {
   height: 100%;
 }
 
-.background {
-  position: absolute;
+.top {
+  background-repeat: no-repeat;
+  max-width: 821px;
+  margin: 0 auto;
 }
 
-.header__top span, .header__top .coordinate {
+.background {
+  position: absolute;
+  z-index: -1;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.header__top span,
+.header__top .coordinate {
   color: #fff;
+}
+.header__top .right__side {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.header__top .coordinate {
+  font-family: Montserrat;
+  font-style: Regular;
+  font-size: 12px;
+  position: relative;
+}
+.header__top .coordinate span {
+  display: inherit;
+  text-align: center;
+  width: 99px;
+}
+.header__top .coordinate span:first-child {
+  font-size: 21px;
+}
+.header__top .coordinate .coordinat__img {
+  position: absolute;
+}
+.header__top .tellephone span {
+  display: inherit;
+  text-align: center;
+}
+.header__top .tell {
+  font-size: 20px;
+}
+.header__top .tell .phone {
+  height: 10px;
+  width: 10px;
+}
+.header__top .coordinat__img {
+  width: 10px;
+  height: 10px;
+}
+.header__top .time_worck {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=scss.css.map */
