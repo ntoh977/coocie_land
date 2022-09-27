@@ -447,23 +447,34 @@ footer img {
   height: unset;
   width: unset;
 }
-footer .soc__buttons {
+footer .soc__buttons, footer .soc__logo {
   display: flex;
   gap: 15px;
-  margin-top: 26px;
+  margin-top: 20px;
 }
 footer .row {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
 }
-footer .menu li:first-child, footer .menu__info li:first-child {
+footer .soc__logo {
+  position: absolute;
+  left: 179px;
+  gap: 46px;
+}
+footer .menu li:first-child,
+footer .menu__info li:first-child {
   margin-bottom: 11px;
+  font-weight: bold;
+  opacity: 1;
 }
-footer .menu li, footer .menu__info li {
+footer .menu li,
+footer .menu__info li {
   line-height: 35px;
+  opacity: 0.7;
 }
-footer ul, footer li {
+footer ul,
+footer li {
   list-style: none;
   /* padding: 0; */
   margin: 0;

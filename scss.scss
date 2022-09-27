@@ -517,7 +517,8 @@ input:valid~label {
 
 footer {
     border-top: 1px solid #958F8F;
-padding: 58px 0 65px 0;
+    padding: 58px 0 65px 0;
+
     .title {
         font-family: 'Poppins';
         font-style: normal;
@@ -529,29 +530,45 @@ padding: 58px 0 65px 0;
         text-transform: capitalize;
 
         color: #FFFFFF;
-       
+
     }
+
     img {
         height: unset;
         width: unset;
     }
-    .soc__buttons {
+
+    .soc__buttons,.soc__logo {
         display: flex;
         gap: 15px;
-        margin-top: 26px;
+        margin-top: 20px;
     }
+
     .row {
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
     }
-    .menu li:first-child,.menu__info li:first-child{
+    .soc__logo{
+        position: absolute;
+        left: 179px;
+        gap: 46px;
+    }
+    .menu li:first-child,
+    .menu__info li:first-child {
         margin-bottom: 11px;
+        font-weight: bold;
+        opacity: 1;
     }
-    .menu li,.menu__info li{
-    line-height: 35px;
+
+    .menu li,
+    .menu__info li {
+        line-height: 35px;
+        opacity: 0.7;
     }
-    ul, li {
+
+    ul,
+    li {
         list-style: none;
         /* padding: 0; */
         margin: 0;
