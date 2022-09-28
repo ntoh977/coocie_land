@@ -60,7 +60,7 @@ img {
 
 
     color: rgba(255, 255, 255, 0.75);
-    margin-bottom: 61px;
+    margin-bottom: 0;
 
     img {
         width: 40px;
@@ -172,10 +172,10 @@ gap: 20px;
 }
 
 .slider__top {
-    display: flex;
-    gap: 31px;
-    position: relative;
-    margin-top: 65px;
+    // display: flex;
+    // gap: 31px;
+    // position: relative;
+    // margin-top: 65px;
 
     .title__ {
         position: absolute;
@@ -193,7 +193,9 @@ gap: 20px;
 }
 
 .product {
-    max-width: 258px;
+    max-width: 100%;
+   
+    margin-left: 42px;
     border-radius: 10px;
     line-height: 0;
 
@@ -496,8 +498,11 @@ input:valid~label {
     .content {
         padding: 5px;
     }
-
+    .slick-slide {
+        margin: 0 10px;
+    }
     .post {
+        margin-left: 20px;
         img {
             width: unset;
             height: unset;
@@ -506,12 +511,13 @@ input:valid~label {
 
     .conteiner__title {
         display: flex;
+        align-items: center;
         justify-content: space-around;
     }
 
     .post__slide {
-        display: flex;
-        gap: 31px;
+        // display: flex;
+        // gap: 31px;
     }
 }
 
@@ -578,7 +584,26 @@ footer {
         margin: 0;
     }
 }
-
+.visible-lg  {
+    img{
+        width: unset;
+        height: unset;
+    }  
+}
+.post__slide {
+    .post {
+        img{
+            width: 100%;
+        }
+    }
+    .price {
+        display: flex;
+        gap: 20px;
+        img {
+            width: unset;
+        }
+    }
+}
 @media (max-width:1345px) {
     .top {
         gap: 31px;

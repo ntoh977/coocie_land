@@ -1,12 +1,45 @@
 $(document).ready(function () {
 
-    // $('.slider__main').slick({
-
-    //     arrows: true,
-    //     prevArrow:"<div class='visible-lg slick-prev'><img src='./img/prev page.png'></div>",
-    //     nextArrow:"<div class='visible-lg slick-next'><img src='./img/Next page.png' class='rotate'></div>",
-    // });
-
+    $('.slider__main').slick({
+        slidesToShow: 3,
+        arrows: true,
+        prevArrow:"<div class='visible-lg slick-prev'><img src='./img/Vector__l.png' ></div>",
+        nextArrow:"<div class='visible-lg slick-next'><img src='./img/Vector__r.png' class='rotate'></div>",
+        responsive: [
+            {
+                breakpoint: 836,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ],
+    });
+    $('.post__slide').slick({
+        slidesToShow: 3,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 836,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ],
+        prevArrow:"<div class='visible-lg slick-prev'><img src='./img/Vector__l.png' ></div>",
+        nextArrow:"<div class='visible-lg slick-next'><img src='./img/Vector__r.png' class='rotate'></div>",
+    });
 
     // $('.slider__one').slick({
     //     cssEase: 'linear',

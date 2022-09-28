@@ -54,7 +54,7 @@ img {
   line-height: 28px;
   /* identical to box height, or 156% */
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 61px;
+  margin-bottom: 0;
 }
 .btn img {
   width: 40px;
@@ -143,12 +143,6 @@ img {
   left: -17px;
 }
 
-.slider__top {
-  display: flex;
-  gap: 31px;
-  position: relative;
-  margin-top: 65px;
-}
 .slider__top .title__ {
   position: absolute;
   top: -65px;
@@ -162,7 +156,8 @@ img {
 }
 
 .product {
-  max-width: 258px;
+  max-width: 100%;
+  margin-left: 42px;
   border-radius: 10px;
   line-height: 0;
 }
@@ -417,17 +412,20 @@ input:valid ~ label {
 .slider__bottom .content {
   padding: 5px;
 }
+.slider__bottom .slick-slide {
+  margin: 0 10px;
+}
+.slider__bottom .post {
+  margin-left: 20px;
+}
 .slider__bottom .post img {
   width: unset;
   height: unset;
 }
 .slider__bottom .conteiner__title {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-}
-.slider__bottom .post__slide {
-  display: flex;
-  gap: 31px;
 }
 
 footer {
@@ -484,6 +482,22 @@ footer li {
   list-style: none;
   /* padding: 0; */
   margin: 0;
+}
+
+.visible-lg img {
+  width: unset;
+  height: unset;
+}
+
+.post__slide .post img {
+  width: 100%;
+}
+.post__slide .price {
+  display: flex;
+  gap: 20px;
+}
+.post__slide .price img {
+  width: unset;
 }
 
 @media (max-width: 1345px) {
