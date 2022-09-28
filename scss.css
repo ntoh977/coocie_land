@@ -155,11 +155,17 @@ img {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.slick-slide {
+  margin: 0 20px;
+}
+
 .product {
   max-width: 100%;
-  margin-left: 42px;
   border-radius: 10px;
   line-height: 0;
+}
+.product:not:first-child {
+  margin-left: 42px;
 }
 .product .content__product {
   text-align: left;
@@ -511,9 +517,26 @@ footer li {
   margin: 0;
 }
 
+.visible-lg {
+  position: absolute;
+}
 .visible-lg img {
   width: unset;
   height: unset;
+}
+
+.slider__main {
+  margin-top: 20px;
+}
+
+.slick-next {
+  top: -30px;
+  right: 0;
+}
+
+.slick-prev {
+  top: -30px;
+  right: 30px;
 }
 
 .post__slide .post img {
