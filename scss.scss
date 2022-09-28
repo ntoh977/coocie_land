@@ -521,6 +521,33 @@ input:valid~label {
     }
 }
 
+/* scroll top */
+#top {
+    position: fixed;
+    right: 29px;
+    bottom: 238px;
+    z-index: 9;
+    img {
+        border-style: none;
+        height: 76px;
+    }
+  }
+  
+  #top {
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    opacity: 0.5;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #top:hover {
+    opacity: 1;
+  }
+  
+  /* scroll top */
 footer {
     border-top: 1px solid #958F8F;
     padding: 58px 0 65px 0;
