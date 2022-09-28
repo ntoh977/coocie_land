@@ -1,10 +1,16 @@
 $(document).ready(function () {
 
+    // $(".slick-next").click(function(e){
+    //     // e.preventDefault();
+    //     $(".slick-next").not($(this)).removeClass("active_slick");
+    //     $(this).toggleClass("active_slick");
+    //   });
+
     $('.slider__main').slick({
         slidesToShow: 3,
         arrows: true,
-        prevArrow:"<div class='visible-lg slick-prev'><img src='./img/Vector__l.png' ></div>",
-        nextArrow:"<div class='visible-lg slick-next'><img src='./img/Vector__r.png' class='rotate'></div>",
+        prevArrow: "<div class='visible-lg slick-prev'><img src='./img/Vector__l.png' ></div>",
+        nextArrow: "<div class='visible-lg slick-next'><img src='./img/Vector__r.png' class='rotate'></div>",
         responsive: [
             {
                 breakpoint: 836,
@@ -37,8 +43,8 @@ $(document).ready(function () {
                 }
             }
         ],
-        prevArrow:"<div class='visible-lg slick-prev'><img src='./img/Vector__l.png' ></div>",
-        nextArrow:"<div class='visible-lg slick-next'><img src='./img/Vector__r.png' class='rotate'></div>",
+        prevArrow: "<div class='visible-lg slick-prev'><img src='./img/Vector__l.png' ></div>",
+        nextArrow: "<div class='visible-lg slick-next'><img src='./img/Vector__r.png' class='rotate'></div>",
     });
 
     // $('.slider__one').slick({
@@ -69,4 +75,9 @@ $(document).ready(function () {
             return false;
         });
     });
+
+
+   
 });
+
+
