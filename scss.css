@@ -433,6 +433,9 @@ footer {
   border-top: 1px solid #958F8F;
   padding: 58px 0 65px 0;
 }
+footer .soc__container {
+  position: relative;
+}
 footer .title {
   font-family: 'Poppins';
   font-style: normal;
@@ -459,8 +462,10 @@ footer .row {
 }
 footer .soc__logo {
   position: absolute;
-  left: 179px;
-  gap: 46px;
+  /* left: 179px; */
+  gap: 48px;
+  margin-left: 12px;
+  top: 0;
 }
 footer .menu li:first-child,
 footer .menu__info li:first-child {
@@ -485,8 +490,17 @@ footer li {
     gap: 31px;
   }
 
+  .container__marketplace {
+    height: 100%;
+  }
+
   .container__marketplace .right {
     display: none;
+  }
+
+  .container__marketplace .left {
+    max-width: 590px;
+    margin: 100px 0;
   }
 }
 @media (max-width: 1225px) {
@@ -519,9 +533,34 @@ footer li {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 588px) {
+  .container__marketplace .left {
+    text-align: center;
+  }
+
+  .text {
+    margin: 25px auto;
+  }
+}
 @media (max-width: 479px) {
   .top .title {
     font-size: 15vw;
+  }
+
+  .user-label {
+    left: 19px;
+  }
+
+  footer .left {
+    display: none;
+  }
+}
+@media (max-width: 384px) {
+  .post__slide .post img {
+    width: 100%;
+  }
+  .post__slide .price img {
+    width: unset;
   }
 }
 
