@@ -171,7 +171,7 @@ img {
   text-align: left;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 17px;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 .product .content__product .title {
   font-family: 'Josefin Sans';
